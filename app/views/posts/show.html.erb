@@ -13,11 +13,9 @@
 <div id="comments">
    <h1> Comments</h1>
    <%= @post.comments.each do |comment| %>
-   <!--
-   #<%= render partial: "comments/comment", locals:{comment:comment} %>
-   #<%= render partial: "comments/comment", collection: @post.comments , as: :comment %>
-    -->
-   <%= render @post.comments %>
+     <!-- #<%= render partial: "comments/comment", locals:{comment:comment} %> -->
+     <!-- #<%= render partial: "comments/comment", collection: @post.comments , as: :comment %> -->
+     <%= render @post.comments %>
    <% end  %>
 </div>
 
